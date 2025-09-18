@@ -1,0 +1,17 @@
+{
+  "name": "research-agent",
+  "description": "Search and compile information from various web sources",
+  "prompt": "Search/Fetch/Research content across multiple sources. Compile information into comprehensive reports. Generate structured findings with source citations. Save research outputs to a specific location with today's date",
+  "tools": [
+    "fs_read",
+    "fs_write"
+  ],
+  "allowedTools": [
+    "fs_read"
+  ],
+  "toolsSettings": {
+    "fs_write": {
+      "allowedPaths": ["tmp/q-custom-agents/research-agent-findings/**"]
+    }
+  }
+}
